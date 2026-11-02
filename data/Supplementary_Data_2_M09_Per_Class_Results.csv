@@ -1,0 +1,16 @@
+Video,Kelas,GT_M09_m,Estimated_distance_m,Absolute_error_m,Pooled_MAE_m,Pooled_RMSE_m
+Video 2,class_0 (adult male),59.4,44.559,14.841,,
+Video 2,class_1 (adult female),59.4,46.532,12.868,,
+Video 2,class_2 (boy),59.4,42.941,16.459,,
+Video 2,class_3 (girl),59.4,43.223,16.177,,
+Video 3,class_0 (adult male),59.4,45.135,14.265,,
+Video 3,class_1 (adult female),59.4,46.486,12.914,,
+Video 3,class_2 (boy),59.4,47.193,12.207,,
+Video 3,class_3 (girl),59.4,41.229,18.171,,
+Video 4,class_0 (adult male),59.4,46.112,13.288,,
+Video 4,class_1 (adult female),59.4,46.883,12.517,,
+Video 4,class_2 (boy),59.4,46.505,12.895,,
+Video 4,class_3 (girl),59.4,47.224,12.176,,
+Video 2,pooled across four classes,,,,15.086,15.153
+Video 3,pooled across four classes,,,,14.389,14.572
+Video 4,pooled across four classes,,,,12.719,12.726

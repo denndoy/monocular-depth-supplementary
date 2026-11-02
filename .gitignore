@@ -1,0 +1,29 @@
+# Local private originals/reports; sanitized release assets in public folders are tracked.
+/evidence/private_review/
+/evidence/public_candidates/
+/figures/private_review/
+/videos/private_review/
+/publication_review/
+
+# Do not add main-project models/scenes or source documents.
+*.blend
+*.blend1
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.docx
+*.pdf
+*.zip
+*.7z
+*.env
+.env
+.env.*
+
+# Local caches and operating-system artifacts.
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+Desktop.ini

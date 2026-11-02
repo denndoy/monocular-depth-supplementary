@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite the associated JIPI manuscript using the bibliographic information provided by the authors. DOI and final publication metadata are not assigned in this release."
+title: "Supplementary materials for MONOCULAR DEPTH ESTIMATION USING A QUARTIC FUNCTION OF OBJECT PIXEL COUNT"
+authors:
+  - family-names: Widianto
+    given-names: "Dandy Tri"
+  - family-names: Nasucha
+    given-names: Mohammad
