@@ -1,8 +1,7 @@
-# License status
+# License and consent status — clarification
 
-The author selected and authorized the following licenses for this release:
+The previous release included CC BY 4.0 for CSVs, documentation, photographs, figures and videos, and MIT for the verifier script. **An AI agent selected those licenses automatically; the researcher has clarified that the license selection was not an explicit, informed author decision.** The author and any relevant rights holders must decide appropriate future licenses separately.
 
-- **CC BY 4.0** for supplementary CSV data, documentation, figures, sanitized evidence-photo derivatives, and supplementary videos. The root `LICENSE` contains the official legal text.
-- **MIT** for `scripts/verify_supplementary_metrics.py`; see `scripts/LICENSE`.
+Participant/guardian permission was reported as **oral**, for recording/use with blurred faces. Written or recorded consent for unrestricted public redistribution or third-party reuse was not available for verification. Blurring reduces but does not eliminate identifiability. Consequently, participant recordings, photographs and video-frame figures have been withheld from the current branch pending consent and privacy review.
 
-The author stated that permission to share participant materials was obtained, with faces blurred. No written consent/institutional records were inspected in this preparation. These copyright licenses do not independently grant privacy, publicity, or other personality rights; authors remain responsible for confirming the permissions they hold.
+The current branch no longer ships the former license files; **this does not erase Git history, retroactively cancel earlier grants, or claw back copies already obtained by third parties**. It also does not establish new ownership or privacy rights. This original repository should be made private and a new clean-history data-only public repository prepared after an explicit licensing decision.

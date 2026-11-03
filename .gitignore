@@ -27,3 +27,14 @@ __pycache__/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Prevent accidental publication of participant recordings and field photographs.
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.jpg
+*.jpeg
+/evidence/public/
+/figures/Fig_2_*
+/figures/Fig_6_*

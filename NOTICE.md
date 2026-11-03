@@ -1,5 +1,7 @@
-# Attribution notice
+# Publication and privacy notice
 
-Copyright (c) 2026 Dandy Tri Widianto and Mohammad Nasucha, except where a file is separately attributed. Supplementary data, documentation, figures, sanitized evidence-photo derivatives, and videos are licensed under CC BY 4.0 (see `LICENSE`). The verifier script is MIT-licensed (see `scripts/LICENSE`).
+Research supplementary materials for **MONOCULAR DEPTH ESTIMATION USING A QUARTIC FUNCTION OF OBJECT PIXEL COUNT**.
 
-When reusing CC BY 4.0 materials, retain attribution, link the license, and indicate modifications. Evidence-photo derivatives have metadata removed; one visible person's head/face was blurred. Video demonstrations are face-blurred and audio-free.
+The current branch retains numerical results, research-method documentation, non-photographic diagrams and an event-metric verification script. The participant videos, field photographs and visual frame composites that were uploaded previously have been withheld from the current branch following a consent/licensing review.
+
+The previous public commit history included those assets and an automatically selected CC BY 4.0 license. This correction **does not delete old commits, retroactively revoke license grants, or prevent use of copies previously downloaded**. The original repository should be made private and a separate clean-history public repository created for vetted numerical materials. No ethical-committee approval is claimed by this notice.

@@ -1,5 +1,5 @@
-# Evidence photographs
+# Field documentation — withheld
 
-Eight measurement/setup photo derivatives from the data-collection process are included. EXIF metadata, including GPS, was stripped from the public copies. The photograph containing a person has the head/face area blurred. Unmodified originals are not included. The physical setting may still be recognizable; face blur and metadata stripping do not guarantee anonymity.
+Eight field measurement/setup photographs previously uploaded have been withheld from the active branch pending confirmation of rights for public third-party redistribution, especially where recognizable people or locations may appear. Removal of metadata and facial blurring do not alone guarantee privacy or provide a legal basis for open reuse.
 
-The author authorized release of these face-blurred derivatives. The image assets are CC BY 4.0; see the root `LICENSE` and `LICENSE_STATUS.md`.
+**History warning:** These assets were included in previous public Git commits. They remain recoverable from Git history while the original repository stays public. Make this existing repository private and prepare a separate clean-history data-only public repository.

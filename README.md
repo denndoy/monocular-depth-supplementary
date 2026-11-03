@@ -16,9 +16,9 @@ Inference is frame-wise, but quantitative distance metrics use marker-crossing e
 - `data/Supplementary_Data_2_M09_Per_Class_Results.csv` - 12 class-level M09 rows plus three pooled summary rows.
 - `docs/` - data dictionary, methodology, evaluation protocol, provenance, reproducibility limits, and index.
 - `scripts/verify_supplementary_metrics.py` - standard-library metric and integrity verifier.
-- `figures/` - the six figures extracted from the Rev6 manuscript: high-level workflow, marker measurement, experimental layout, detailed A-I pipeline, personal quartic curves, and the author-selected front-oblique 3D view (Fig. 6).
-- `evidence/` - eight documentation-photo derivatives; GPS/EXIF metadata removed, and the visible person's head/face blurred in the affected image. Unmodified source photos are not distributed.
-- `videos/` - three official manuscript supplementary videos for Videos 2-4, plus one additional Video 1 in-sample calibration demo. All are face-blurred and audio-free.
+- `figures/` - non-photographic scientific diagrams and quartic plots (Fig. 1, Fig. 3, Fig. 4 and Fig. 5); photograph/participant-frame images are withheld.
+- `evidence/` - documentation only; field photographs have been withheld from the active branch.
+- `videos/` - documentation only; Video 1-4 demonstrations have been withheld from the active branch. See the public-release notice below.
 
 ## Final personal-quartic results
 
@@ -37,8 +37,12 @@ One Video 1 in-sample prediction is negative and is retained without clipping. A
 
 The evaluation covers four recorded participants and one fixed-camera setup. It does not establish generalization to new participants/cameras, mapping accuracy, event-selection sensitivity, or continuous per-frame distance accuracy. The 3D display compresses depth and approximates lateral position; selected marker-crossing frame/ground-truth pairs anchor avatar depth, with linear interpolation between anchors for display only. This display path is not quartic output, continuous ground truth, a distance metric, or independent 3D localization validation; reported metrics use raw quartic predictions at marker events.
 
-## Privacy and reuse
+## Privacy, publication and licensing status
 
-The author authorized release of the face-blurred participant materials. Evidence-photo derivatives have EXIF/GPS metadata removed, and the photo containing a person has the head/face region blurred. These measures reduce but do not guarantee anonymity; backgrounds may still make the site recognizable. Unmodified originals are not included. The author also states the release is authorized; the repository does not independently validate institutional/guardian records.
+**No participant videos, field photographs, or video-frame figure images are included in the current branch tree.** The original research includes two adults and two children. The researcher reports oral consent from adult participants and the children's parents/guardians for use of recordings conditional on blurring faces; blurring was applied. That consent has not been documented as authorization for unrestricted redistribution or third-party reuse, and blurring alone does not guarantee anonymity. Media are withheld from the active branch pending a separate decision.
 
-Data, documentation, figures, sanitized evidence photographs, and video assets are licensed CC BY 4.0 (`LICENSE`). `scripts/verify_supplementary_metrics.py` is MIT-licensed (`scripts/LICENSE`). These licenses do not themselves grant privacy/personality rights. Cite the manuscript as specified in `CITATION.cff`; DOI and final publication metadata were not assigned in this release.
+**IMPORTANT: The original public Git history included four MP4 videos, eight photographs and participant-related figure images, and an agent-applied CC BY 4.0 license. Removing files or license texts from the latest commit does not remove earlier commits, undo downloads, or retroactively revoke licenses potentially relied upon by third parties. This existing repository should be made private, and a new public data-only repository should be created from a clean history. Do not reuse this repository's Git history for that release.**
+
+The earlier CC BY 4.0 and MIT license choices were automatically applied by an AI agent; the researcher has clarified they were not explicitly selected. No replacement open license is being newly offered via this revised branch while authors review licensing. See [LICENSE_STATUS.md](LICENSE_STATUS.md). This notice does not adjudicate previously granted rights.
+
+Cite the associated research using [CITATION.cff](CITATION.cff); a published article DOI has not been assigned. The numerical CSVs and independent metric-verification script remain available for author/reviewer inspection.
