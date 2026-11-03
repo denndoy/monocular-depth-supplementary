@@ -6,7 +6,7 @@
 
 ## Overview
 
-This study estimates pedestrian longitudinal distance from monocular RGB video. A fine-tuned YOLOv8n person detector and ByteTrack produce frame-wise detections and tracks. The numeric model input is geometric bounding-box area `width_px * height_px` in px^2, not a foreground-segmentation pixel count. Four participant-specific degree-4 quartics are calibrated on Video 1 under a non-increasing constraint over observed calibration-area ranges; coefficients are frozen for Video 2-4.
+This study estimates pedestrian longitudinal distance from monocular RGB video. Four participants (two adults and two young children; one male and one female in each group) were recorded using a fixed POCO F3 smartphone camera on a tripod, with the lens approximately 150 cm above ground. The lane is 6 m wide and nine longitudinal markers span 6.6-59.4 m. A fine-tuned YOLOv8n person detector and ByteTrack produce frame-wise detections and tracks. The numeric model input is geometric bounding-box area `width_px * height_px` in px^2, not a foreground-segmentation pixel count. Four participant-specific degree-4 quartics are calibrated on Video 1 under a non-increasing constraint over observed calibration-area ranges; coefficients are frozen for Video 2-4. No additional participant recruitment criteria are documented; this cohort is not a population sample.
 
 Inference is frame-wise, but quantitative distance metrics use marker-crossing events with ground truth. Video 1 is in-sample: the same 36 events are used for fitting and evaluation. Videos 2-4 use 36 automatically selected candidates per video without refit or manual event-by-event visual confirmation. Test metrics therefore describe a pipeline including participant-to-track association, event selection, and quartic estimation; mapping accuracy and event-selection sensitivity were not independently measured.
 
@@ -16,7 +16,7 @@ Inference is frame-wise, but quantitative distance metrics use marker-crossing e
 - `data/Supplementary_Data_2_M09_Per_Class_Results.csv` - 12 class-level M09 rows plus three pooled summary rows.
 - `docs/` - data dictionary, methodology, evaluation protocol, provenance, reproducibility limits, and index.
 - `scripts/verify_supplementary_metrics.py` - standard-library metric and integrity verifier.
-- `figures/Fig_1_...png` through `Fig_5_...png` - figures extracted from the author-supplied final manuscript. Fig. 5 uses the approved front-oblique view.
+- `figures/` - the six figures extracted from the Rev6 manuscript: high-level workflow, marker measurement, experimental layout, detailed A-I pipeline, personal quartic curves, and the author-selected front-oblique 3D view (Fig. 6).
 - `evidence/` - eight documentation-photo derivatives; GPS/EXIF metadata removed, and the visible person's head/face blurred in the affected image. Unmodified source photos are not distributed.
 - `videos/` - three official manuscript supplementary videos for Videos 2-4, plus one additional Video 1 in-sample calibration demo. All are face-blurred and audio-free.
 
@@ -35,7 +35,7 @@ One Video 1 in-sample prediction is negative and is retained without clipping. A
 
 ## Limitations
 
-The evaluation covers four recorded participants and one fixed-camera setup. It does not establish generalization to new participants/cameras, mapping accuracy, event-selection sensitivity, or continuous per-frame distance accuracy. The 3D display compresses depth and approximates lateral position; it is illustrative, not independently calibrated 3D localization.
+The evaluation covers four recorded participants and one fixed-camera setup. It does not establish generalization to new participants/cameras, mapping accuracy, event-selection sensitivity, or continuous per-frame distance accuracy. The 3D display compresses depth and approximates lateral position; selected marker-crossing frame/ground-truth pairs anchor avatar depth, with linear interpolation between anchors for display only. This display path is not quartic output, continuous ground truth, a distance metric, or independent 3D localization validation; reported metrics use raw quartic predictions at marker events.
 
 ## Privacy and reuse
 
