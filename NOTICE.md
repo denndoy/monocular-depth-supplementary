@@ -1,7 +1,7 @@
-# Publication and privacy notice
+# Research supplementary publication notice
 
-Research supplementary materials for **MONOCULAR DEPTH ESTIMATION USING A QUARTIC FUNCTION OF OBJECT PIXEL COUNT**.
+Supplementary materials for **MONOCULAR DEPTH ESTIMATION USING A QUARTIC FUNCTION OF OBJECT PIXEL COUNT**.
 
-The current branch retains numerical results, research-method documentation, non-photographic diagrams and an event-metric verification script. The participant videos, field photographs and visual frame composites that were uploaded previously have been withheld from the current branch following a consent/licensing review.
+This repository contains event-level numerical results, documentation, diagrams, field photo derivatives and face-blurred video demonstrations. The researcher confirms oral adult/guardian permission for the materials to be publicly viewed, downloaded and redistributed **while keeping the faces blurred**. Written/recorded proof was not independently reviewed, nor was every video frame independently examined.
 
-The previous public commit history included those assets and an automatically selected CC BY 4.0 license. This correction **does not delete old commits, retroactively revoke license grants, or prevent use of copies previously downloaded**. The original repository should be made private and a separate clean-history public repository created for vetted numerical materials. No ethical-committee approval is claimed by this notice.
+The original unblurred videos are not released, and face blurring does not guarantee anonymity. A prior agent-selected CC BY 4.0 license remains in older Git history; removing its text from the active tree cannot retroactively cancel historical grants. No new blanket CC BY license is asserted here. See [MEDIA_SHARING.md](MEDIA_SHARING.md) and [LICENSE_STATUS.md](LICENSE_STATUS.md).

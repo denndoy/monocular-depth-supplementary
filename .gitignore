@@ -28,7 +28,7 @@ __pycache__/
 Thumbs.db
 Desktop.ini
 
-# Prevent accidental publication of participant recordings and field photographs.
+# Default-deny for NEW media. Approved existing tracked assets are unaffected; review and explicitly git add -f any later media.
 *.mp4
 *.mov
 *.mkv

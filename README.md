@@ -16,9 +16,9 @@ Inference is frame-wise, but quantitative distance metrics use marker-crossing e
 - `data/Supplementary_Data_2_M09_Per_Class_Results.csv` - 12 class-level M09 rows plus three pooled summary rows.
 - `docs/` - data dictionary, methodology, evaluation protocol, provenance, reproducibility limits, and index.
 - `scripts/verify_supplementary_metrics.py` - standard-library metric and integrity verifier.
-- `figures/` - non-photographic scientific diagrams and quartic plots (Fig. 1, Fig. 3, Fig. 4 and Fig. 5); photograph/participant-frame images are withheld.
-- `evidence/` - documentation only; field photographs have been withheld from the active branch.
-- `videos/` - documentation only; Video 1-4 demonstrations have been withheld from the active branch. See the public-release notice below.
+- `figures/` - six numbered paper figures: workflow, marker measurement, layout, detailed pipeline, quartic curves, and front-oblique camera/3D illustration.
+- `evidence/public/` - eight field documentation photograph derivatives; prepared with metadata removal and blurring where a person is visible.
+- `videos/` - three face-blurred supplementary inference demos (Videos 2–4) and one additional Video 1 calibration demo; audio-free according to the preparation notes.
 
 ## Final personal-quartic results
 
@@ -37,12 +37,14 @@ One Video 1 in-sample prediction is negative and is retained without clipping. A
 
 The evaluation covers four recorded participants and one fixed-camera setup. It does not establish generalization to new participants/cameras, mapping accuracy, event-selection sensitivity, or continuous per-frame distance accuracy. The 3D display compresses depth and approximates lateral position; selected marker-crossing frame/ground-truth pairs anchor avatar depth, with linear interpolation between anchors for display only. This display path is not quartic output, continuous ground truth, a distance metric, or independent 3D localization validation; reported metrics use raw quartic predictions at marker events.
 
-## Privacy, publication and licensing status
+## Participant privacy and sharing permission
 
-**No participant videos, field photographs, or video-frame figure images are included in the current branch tree.** The original research includes two adults and two children. The researcher reports oral consent from adult participants and the children's parents/guardians for use of recordings conditional on blurring faces; blurring was applied. That consent has not been documented as authorization for unrestricted redistribution or third-party reuse, and blurring alone does not guarantee anonymity. Media are withheld from the active branch pending a separate decision.
+The researcher confirms **oral permission** from adult participants and the parents/guardians of participating children to publish face-blurred research photos/videos on public GitHub, allow downloading, and permit onward redistribution **provided faces remain blurred**. The researcher states that facial blurring was performed. No written/recorded consent evidence was independently reviewed. Blurring reduces, but cannot eliminate, re-identification risk.
 
-**IMPORTANT: The original public Git history included four MP4 videos, eight photographs and participant-related figure images, and an agent-applied CC BY 4.0 license. Removing files or license texts from the latest commit does not remove earlier commits, undo downloads, or retroactively revoke licenses potentially relied upon by third parties. This existing repository should be made private, and a new public data-only repository should be created from a clean history. Do not reuse this repository's Git history for that release.**
+The released media are restored as the **identical Git objects** previously published in this repository; unblurred source videos are not provided. Earlier preparation notes describe pixelating the upper 45% of detected person boxes and removing audio. No independent frame-by-frame privacy audit was carried out for this restoration. See [MEDIA_SHARING.md](MEDIA_SHARING.md) for the precise scope and remaining limitations.
 
-The earlier CC BY 4.0 and MIT license choices were automatically applied by an AI agent; the researcher has clarified they were not explicitly selected. No replacement open license is being newly offered via this revised branch while authors review licensing. See [LICENSE_STATUS.md](LICENSE_STATUS.md). This notice does not adjudicate previously granted rights.
+## Licensing and repository history
 
-Cite the associated research using [CITATION.cff](CITATION.cff); a published article DOI has not been assigned. The numerical CSVs and independent metric-verification script remain available for author/reviewer inspection.
+A prior AI coding agent automatically selected CC BY 4.0 for data/media and MIT for code; those were **not explicit final author license decisions**. The license files have been removed from the current branch, but their historical presence and any rights previously granted **cannot be undone retroactively**. No new blanket CC BY 4.0 license is asserted by this update. The reported permission to download and redistribute blurred media does not automatically authorize unblurring, distribution of raw videos, or all other reuse. Licensing for numerical data, documentation and code awaits a conscious author decision. See [LICENSE_STATUS.md](LICENSE_STATUS.md) and [LICENSING.md](LICENSING.md).
+
+Cite the manuscript through [CITATION.cff](CITATION.cff); the paper DOI is not assigned yet.

@@ -1,5 +1,7 @@
-# Licensing decisions pending
+# Rights and licensing scope
 
-No new blanket CC BY 4.0 license is asserted for the current repository tree. Previous CC BY 4.0 and MIT notices were placed by an automated agent without an explicit final author licensing decision.
+- **Researcher-reported oral media permission:** public viewing, downloading and redistribution of face-blurred participant images/videos, **on condition that facial blurring is maintained**. No independent documentary proof was inspected; see [MEDIA_SHARING.md](MEDIA_SHARING.md).
+- **Numerical CSVs, documentation and verifier code:** final explicit copyright-license decisions are pending. Public access alone should not be interpreted as a new blanket license for all uses.
+- **Historical licensing:** CC BY 4.0 and MIT licenses were automatically chosen by an earlier AI agent. Their removal from the latest tree does not revoke any rights previously granted under the old versions.
 
-The former licenses existed in historical public commits. Deleting their text now **does not revoke previously granted rights or eliminate historical media**. Before publishing a new clean-history data-only repository, the authors should explicitly select appropriate terms for numerical CSVs, documentation, and the verifier script, while keeping human-participant images/videos outside that public data release pending permission confirmation. See [LICENSE_STATUS.md](LICENSE_STATUS.md).
+No permission is asserted to distribute unblurred original recordings or remove facial blurring. Distribution consent does not substitute for institutional ethics review.
